@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88eadc66bb39cfc8446ad53ebadfd7b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88eadc66bb39cfc8446ad53ebadfd7b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88eadc66bb39cfc8446ad53ebadfd7b6 = L.map(
+                "map_88eadc66bb39cfc8446ad53ebadfd7b6",
+                {
+                    center: [39.93664091416846, -105.14755022393557],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9c84022c888784294a5b77ca9af204b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e9c84022c888784294a5b77ca9af204b.addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var marker_8b4dda90a44e1a9dfa2b7cf80044bd7f = L.marker(
+                [39.93664091416846, -105.14755022393557],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_22f58197b19d6f87ee71db9a9d3a20b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b4dda90a44e1a9dfa2b7cf80044bd7f.setIcon(icon_22f58197b19d6f87ee71db9a9d3a20b7);
+        
+    
+        var popup_804b650bc7a555170a5bad7fdeb5819f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1910dae158ed0408323e54fd59606858 = $(`<div id="html_1910dae158ed0408323e54fd59606858" style="width: 100.0%; height: 100.0%;">Owner Phong Thi Nguyen<br>Address: 1916 Estabrook Way, Superior, CO 80027</div>`)[0];
+                popup_804b650bc7a555170a5bad7fdeb5819f.setContent(html_1910dae158ed0408323e54fd59606858);
+            
+        
+
+        marker_8b4dda90a44e1a9dfa2b7cf80044bd7f.bindPopup(popup_804b650bc7a555170a5bad7fdeb5819f)
+        ;
+
+        
+    
+    
+            var marker_517a8309da8f1dab94b797fa6814954a = L.marker(
+                [39.9740113, -105.17024048932285],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_83dda76ebd533366367fa025a9a0ca0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_517a8309da8f1dab94b797fa6814954a.setIcon(icon_83dda76ebd533366367fa025a9a0ca0c);
+        
+    
+        var popup_a767bb6c0a846e74cab44661b667c042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4739142d3a608a73cdea2082783e9c6 = $(`<div id="html_b4739142d3a608a73cdea2082783e9c6" style="width: 100.0%; height: 100.0%;">Owner John Bowen Soot & Ash<br>Address: 1214 W Pine Ct, Louisville, CO 80027</div>`)[0];
+                popup_a767bb6c0a846e74cab44661b667c042.setContent(html_b4739142d3a608a73cdea2082783e9c6);
+            
+        
+
+        marker_517a8309da8f1dab94b797fa6814954a.bindPopup(popup_a767bb6c0a846e74cab44661b667c042)
+        ;
+
+        
+    
+    
+            var marker_b3117ef4fc8f914df5ec4a2508b4cb42 = L.marker(
+                [39.93948579911055, -105.16555047045358],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_f6b5b7d97129edc46671f6df1d3ca0e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3117ef4fc8f914df5ec4a2508b4cb42.setIcon(icon_f6b5b7d97129edc46671f6df1d3ca0e0);
+        
+    
+        var popup_ccee50ae538d4a45404a1dffd47b4520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76e3a26ce835ed2757d44e5a6456d45c = $(`<div id="html_76e3a26ce835ed2757d44e5a6456d45c" style="width: 100.0%; height: 100.0%;">Owner Thomas Schadt Soot & Ash<br>Address: 1675 Rockview Circle, Superior, CO 80027</div>`)[0];
+                popup_ccee50ae538d4a45404a1dffd47b4520.setContent(html_76e3a26ce835ed2757d44e5a6456d45c);
+            
+        
+
+        marker_b3117ef4fc8f914df5ec4a2508b4cb42.bindPopup(popup_ccee50ae538d4a45404a1dffd47b4520)
+        ;
+
+        
+    
+    
+            var marker_a99fb46c20a9ca6b964f510cfaab4197 = L.marker(
+                [39.950869, -105.159373],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_c98014d45a3a085bbf7301097b654c37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a99fb46c20a9ca6b964f510cfaab4197.setIcon(icon_c98014d45a3a085bbf7301097b654c37);
+        
+    
+        var popup_62a2db7625ad4febcb0de2d077091140 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8088ebef397e92066c5d9bff13730216 = $(`<div id="html_8088ebef397e92066c5d9bff13730216" style="width: 100.0%; height: 100.0%;">Owner Guy Harrigan<br>Address: 500 Superior Drive, Superior, CO 80027</div>`)[0];
+                popup_62a2db7625ad4febcb0de2d077091140.setContent(html_8088ebef397e92066c5d9bff13730216);
+            
+        
+
+        marker_a99fb46c20a9ca6b964f510cfaab4197.bindPopup(popup_62a2db7625ad4febcb0de2d077091140)
+        ;
+
+        
+    
+    
+            var marker_c2fc9efaa3763e092442cb5af4c92036 = L.marker(
+                [39.9772283, -105.1781867],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_32fdf78b1ceebefca3bc15dae5a0aaf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2fc9efaa3763e092442cb5af4c92036.setIcon(icon_32fdf78b1ceebefca3bc15dae5a0aaf8);
+        
+    
+        var popup_ebde1c4750eb30f25bbddd6899414bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_569ab5fddfa6869645eee569d978ebcd = $(`<div id="html_569ab5fddfa6869645eee569d978ebcd" style="width: 100.0%; height: 100.0%;">Owner Henry Ruben Lopez Soot & Ash<br>Address: 535 Apollo Drive, Boulder, CO 80303</div>`)[0];
+                popup_ebde1c4750eb30f25bbddd6899414bb4.setContent(html_569ab5fddfa6869645eee569d978ebcd);
+            
+        
+
+        marker_c2fc9efaa3763e092442cb5af4c92036.bindPopup(popup_ebde1c4750eb30f25bbddd6899414bb4)
+        ;
+
+        
+    
+    
+            var marker_2bfb23f8757a535fb59c97296e520d16 = L.marker(
+                [39.97208437447275, -105.15600974550802],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_79f595033ebd013bf3868f98862b6358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bfb23f8757a535fb59c97296e520d16.setIcon(icon_79f595033ebd013bf3868f98862b6358);
+        
+    
+        var popup_3aee0d8e5a8faa18859fcd94cd0226e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2187a5cc94b0ff418c7c8afd6454dc6 = $(`<div id="html_c2187a5cc94b0ff418c7c8afd6454dc6" style="width: 100.0%; height: 100.0%;">Owner John E. Valdez Soot & Ash<br>Address: 791 W Mulberry Street, Louisville CO, 80027</div>`)[0];
+                popup_3aee0d8e5a8faa18859fcd94cd0226e9.setContent(html_c2187a5cc94b0ff418c7c8afd6454dc6);
+            
+        
+
+        marker_2bfb23f8757a535fb59c97296e520d16.bindPopup(popup_3aee0d8e5a8faa18859fcd94cd0226e9)
+        ;
+
+        
+    
+    
+            var marker_7657aa367625b3323100efb9b485b26b = L.marker(
+                [39.959435549999995, -105.14480164572687],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_8b4bbd7935321d97dda5587244b6f4f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7657aa367625b3323100efb9b485b26b.setIcon(icon_8b4bbd7935321d97dda5587244b6f4f5);
+        
+    
+        var popup_3867f26a725a03efff4f7bea77b26f50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccff597b1c6146b4618ed44d3267ac68 = $(`<div id="html_ccff597b1c6146b4618ed44d3267ac68" style="width: 100.0%; height: 100.0%;">Owner John Reilly Soot & Ash<br>Address: 643 Augusta Drive, Louisville, CO 80027</div>`)[0];
+                popup_3867f26a725a03efff4f7bea77b26f50.setContent(html_ccff597b1c6146b4618ed44d3267ac68);
+            
+        
+
+        marker_7657aa367625b3323100efb9b485b26b.bindPopup(popup_3867f26a725a03efff4f7bea77b26f50)
+        ;
+
+        
+    
+    
+            var marker_6d62e866ac447668ef3dbbacfb51573b = L.marker(
+                [39.97130018432878, -105.14816719082681],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_106211a68b621d47023fa2c3b5973733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d62e866ac447668ef3dbbacfb51573b.setIcon(icon_106211a68b621d47023fa2c3b5973733);
+        
+    
+        var popup_a3b19aac314da670abf3f18feadba377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f8d2da0a4f25f0732685b2788cc2f2d = $(`<div id="html_0f8d2da0a4f25f0732685b2788cc2f2d" style="width: 100.0%; height: 100.0%;">Owner Lindsay Ross Soot & Ash<br>Address: 527 W Hackberry St. Louisville, CO 80027</div>`)[0];
+                popup_a3b19aac314da670abf3f18feadba377.setContent(html_0f8d2da0a4f25f0732685b2788cc2f2d);
+            
+        
+
+        marker_6d62e866ac447668ef3dbbacfb51573b.bindPopup(popup_a3b19aac314da670abf3f18feadba377)
+        ;
+
+        
+    
+    
+            var marker_88b042bf27994215b7ce72c9a87b1b06 = L.marker(
+                [39.974267, -105.165047],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_2f594f23138da0ecd0a19610bd290f4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88b042bf27994215b7ce72c9a87b1b06.setIcon(icon_2f594f23138da0ecd0a19610bd290f4c);
+        
+    
+        var popup_9bf217b4f0134d2f407ea7673ae014f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_461dd7494b7bd1a1594bdf1a2754cc8c = $(`<div id="html_461dd7494b7bd1a1594bdf1a2754cc8c" style="width: 100.0%; height: 100.0%;">Owner Marc Hughes Total Loss<br>Address: 953 Eldorado Lane, Louisville, CO 80027</div>`)[0];
+                popup_9bf217b4f0134d2f407ea7673ae014f7.setContent(html_461dd7494b7bd1a1594bdf1a2754cc8c);
+            
+        
+
+        marker_88b042bf27994215b7ce72c9a87b1b06.bindPopup(popup_9bf217b4f0134d2f407ea7673ae014f7)
+        ;
+
+        
+    
+    
+            var marker_147b5da2784d5212129068c9ad138c98 = L.marker(
+                [39.97161064103399, -105.16084239911017],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_17a92424fa5c3596092791946fad2509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_147b5da2784d5212129068c9ad138c98.setIcon(icon_17a92424fa5c3596092791946fad2509);
+        
+    
+        var popup_3ad59a23c7b96f7a4aac6d78e462c5d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e77102f4f2c42763679c81f23d46e364 = $(`<div id="html_e77102f4f2c42763679c81f23d46e364" style="width: 100.0%; height: 100.0%;">Owner Maria McClure Total Loss<br>Address: 105 Cherrywood Lane, Louisville, CO 80027</div>`)[0];
+                popup_3ad59a23c7b96f7a4aac6d78e462c5d3.setContent(html_e77102f4f2c42763679c81f23d46e364);
+            
+        
+
+        marker_147b5da2784d5212129068c9ad138c98.bindPopup(popup_3ad59a23c7b96f7a4aac6d78e462c5d3)
+        ;
+
+        
+    
+    
+            var marker_ce8e34d6b0583cbc1aa798955383e960 = L.marker(
+                [39.96236905, -105.2156451458962],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_eb80acc5fa18ff4832749187a210430d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce8e34d6b0583cbc1aa798955383e960.setIcon(icon_eb80acc5fa18ff4832749187a210430d);
+        
+    
+        var popup_0af83dc7c388a32292584729742b508a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6da54f8ba8e128058f2f66dc952eea = $(`<div id="html_bb6da54f8ba8e128058f2f66dc952eea" style="width: 100.0%; height: 100.0%;">Owner Peter Linsley<br>Address: 5912 S. Vale Rd., Boulder CO, 80303</div>`)[0];
+                popup_0af83dc7c388a32292584729742b508a.setContent(html_bb6da54f8ba8e128058f2f66dc952eea);
+            
+        
+
+        marker_ce8e34d6b0583cbc1aa798955383e960.bindPopup(popup_0af83dc7c388a32292584729742b508a)
+        ;
+
+        
+    
+    
+            var marker_38b6d59bf8614bb83a16511f10df3ca6 = L.marker(
+                [39.92739180664471, -105.15271063932953],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_33678c3ed985493229f57bfc3be18419 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38b6d59bf8614bb83a16511f10df3ca6.setIcon(icon_33678c3ed985493229f57bfc3be18419);
+        
+    
+        var popup_ab081b648c6ddae351d5133d018b351c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8216240432548fdd78e09d6b98032ea = $(`<div id="html_c8216240432548fdd78e09d6b98032ea" style="width: 100.0%; height: 100.0%;">Owner Roberta S. Gold Soot & Ash<br>Address: 2855 Rock Creek Circle, Superior, CO 80027</div>`)[0];
+                popup_ab081b648c6ddae351d5133d018b351c.setContent(html_c8216240432548fdd78e09d6b98032ea);
+            
+        
+
+        marker_38b6d59bf8614bb83a16511f10df3ca6.bindPopup(popup_ab081b648c6ddae351d5133d018b351c)
+        ;
+
+        
+    
+    
+            var marker_07ca293a670405c0c1ae1d47cb4d9a1a = L.marker(
+                [39.97676665, -105.16478214953415],
+                {}
+            ).addTo(map_88eadc66bb39cfc8446ad53ebadfd7b6);
+        
+    
+            var icon_c24cdc35de6f80473db8dbeec70a02fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07ca293a670405c0c1ae1d47cb4d9a1a.setIcon(icon_c24cdc35de6f80473db8dbeec70a02fe);
+        
+    
+        var popup_80182885f01f73fe584685fca7499c9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeb09dd54ed11191bd6306c907630af0 = $(`<div id="html_aeb09dd54ed11191bd6306c907630af0" style="width: 100.0%; height: 100.0%;">Owner Steve Leslie Buffer Property Damage<br>Address: 985 Arapahoe Circle, Louisville, CO 80027</div>`)[0];
+                popup_80182885f01f73fe584685fca7499c9a.setContent(html_aeb09dd54ed11191bd6306c907630af0);
+            
+        
+
+        marker_07ca293a670405c0c1ae1d47cb4d9a1a.bindPopup(popup_80182885f01f73fe584685fca7499c9a)
+        ;
+
+        
+    
+</script>
+</html>
