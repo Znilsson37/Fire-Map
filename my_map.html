@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe8jAKeJbKdQC0MIUUEAK9airRNCrfUAY&callback=initMap&libraries=places®ion=us">
-</script>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
@@ -16,10 +13,6 @@
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe8jAKeJbKdQC0MIUUEAK9airRNCrfUAY&callback=initMap&libraries=places®ion=us">
-</script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
@@ -29,7 +22,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_88eadc66bb39cfc8446ad53ebadfd7b6 {
+                #map_80e0eb2894d29d46d34b9fef0c2ff846 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +32,28 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places®ion=us">
+   </script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_88eadc66bb39cfc8446ad53ebadfd7b6" ></div>
+            <div class="folium-map" id="map_80e0eb2894d29d46d34b9fef0c2ff846" ></div>
         
 </body>
 <script>
+
+   function initMap() {
+     // Create the map object
+     var map = new google.maps.Map(document.getElementById('map_80e0eb2894d29d46d34b9fef0c2ff846'), {
+       center: { lat: 39.93664091416846, lng: -105.14755022393557 }, // Denver, CO
+       zoom: 12 // Adjust zoom as needed
+     });
+   }
+
+</script>
+</html>
     
     
             var map_88eadc66bb39cfc8446ad53ebadfd7b6 = L.map(
